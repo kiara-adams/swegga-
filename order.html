@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiaraAdams.SWEGGA</title>
+    <link rel="stylesheet" href="./css/styling.css">
+</head>
+<body>
+    <div id="page">
+        <div id="sidebar">
+            <img src="https://kiara-adams.github.io/images/swegga.jpg">
+        </div>
+        <div id="main">
+            <div id="banner">
+                <img src="https://kiara-adams.github.io/images/delivery.gif"> 
+            </div>
+            <div id="navigation">
+                <img src="https://kiara-adams.github.io/images/links.gif" alt="navBar" usemap="#navMap">
+                <map name="navMap">
+                    <area shape="rect" coords="10,5,93,35" href="order.html" alt="home" target = "_blank" >
+                    <area shape="rect" coords="105,5,190,35" href="services.html" alt="Services" target="_blank">
+                    <area shape="rect" coords="205,5,300,35" href="products.html" alt="products" target="_blank">
+                    <area shape="rect" coords="310,5,440,35" href="orderStatus.html" alt="orderStatus" target="_blank">
+                    <area shape="rect" coords="450,5,555,35" href="contactUs.html" alt="contactUs" target="_blank">
+                </map>
+            </div>
+            <div id="table">
+                <form action="" name="orders" class="orders">
+                    <table>
+                        <h1 class="caption">Product Summary</h1>
+                        <thead>
+                            <tr>
+                                <td>Description</td>
+                                <td>Size</td>
+                                <td>Colour</td>
+                                <td>Price</td>
+                                <td>Quantity</td>
+                                <td>Total</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="female.html">Female Ski Jackets</a></td>
+                                <td>
+                                    <select id="color" onchange>
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                      </select>
+                                </td>
+                                <td>
+                                        <select id="color" onchange>
+                                          <option value="red">Red</option>
+                                          <option value="pink">Pink</option>
+                                          <option value="black">Black</option>
+                                        </select>
+                                </td>
+                                <td class = "alignRight" >150.95</td>
+                                <td><input type="text" id="inp1" placeholder="2"></td>
+                                <td class = "alignRight" >R <span id="femTot">301.90</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="male.html">Male Ski Jackets</a></td>
+                                <td>
+                                    <select id="color" >
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                      </select>
+                                </td>
+                                <td>
+                                    <select id="color" >
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="white">White</option>
+                                      </select>
+                                </td>
+                                <td>180.95</td>
+                                <td><input type="text" id="inp2" placeholder="4"></td>
+                                <td>R <span id="maleTot" class="alignRight">723.80</span></td>
+                            </tr>
+                            <tr>
+                                <td id="confirm" colspan="4">Click to confirm your order:</td>
+                                <td><button id="button">Total Price</button></td>
+                                <td>R<span id="total">1025.70</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div id="footer">
+                <p class="copyright">© 2024 Swegga Fashion - Kiara Adams</p>
+            </div>
+        </footer>
+    </div>
+    <script src= "./script/script.js"></script>
+</body>
+</html>

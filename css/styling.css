@@ -1,0 +1,120 @@
+/* Examination number */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	background-color: #4766B8;
+    margin: 0;
+	padding: 0; }
+
+
+#page {
+	width: 790px;
+	background-color: white;
+	margin: 10px auto;
+	border: 2px solid black;
+	padding: 10px;
+    height: 400px; }
+
+#banner {
+    margin-bottom: 1em;
+	height: 70px }
+
+#navigation {
+	margin-top: 1em;
+	height: 45px;
+	background-color: white; }
+	
+#sidebar {
+	width: 150px;
+	height: 370px;
+	background-color: white;
+	margin-bottom: .7em;
+	float: left; }
+
+.copyright {
+    font-size: 90%;
+    text-align: right; 
+	margin: 0; }
+	
+/* the styles for the table*/
+
+caption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-size: 150%;
+	color: #4766B8; }
+
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: .2em .7em;
+	font-size: 95%; }	
+	
+.alignRight {
+	text-align: right; }
+
+	
+	
+	#main {
+		float: right;
+		width: 75%;
+		padding: 10px;
+	}
+	/* Style for footer */
+	/* #footer {
+		clear: both;
+		background-color: #fcfafa;
+		color: #000000;
+		padding: 10px;
+		text-align: center;
+	} */
+	#footer {
+        margin-top: .5em;
+        border-top: 2px solid gray;
+        padding-top: .7em;
+        clear: left;
+    }
+	.products{
+		text-align: center;
+		color: blue;
+	}
+
+
+.caption{
+	text-align: center;
+	color: #4766B8;
+}
+	
+#sidebar img {
+    height: 350px;
+    width: 150px;
+}
+#banner img {
+    height: 85px;
+    width: 300px;
+}
+#navigation img {
+    height: 56px;
+    width: 560px;
+}
+
+@media (max-width: 768px) {
+    #page {
+        width: 90%;
+    }
+    #sidebar {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    #main {
+        margin-left: 0;
+    }
+}
